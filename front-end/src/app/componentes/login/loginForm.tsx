@@ -31,7 +31,7 @@ export default function LoginForm() {
           type="text"
           value={login}
           onChange={(e) => setLogin(e.target.value)}
-          className="border rounded px-2 py-1"
+          className="border border-zinc-600 rounded px-2 py-1"
           required
         />
       </label>
@@ -42,12 +42,12 @@ export default function LoginForm() {
             type={showSenha ? "text" : "password"}
             value={senha}
             onChange={(e) => setSenha(e.target.value)}
-            className="border rounded-l-sm px-2 py-1 w-7/8"
+            className="border border-zinc-600 rounded-l-sm px-2 py-1 w-7/8"
             required
           />
           <button
             type="button"
-            className="w-1/8 bg-zinc-300 justify-items-center hover:bg-zinc-400 rounded-r-sm px-2 py-1"
+            className="w-1/8 bg-zinc-600 justify-items-center hover:bg-zinc-700 rounded-r-sm px-2 py-1"
             onClick={() => setShowSenha((prev) => !prev)}
             aria-label={showSenha ? "Esconder senha" : "Mostrar senha"}
             // Aqui você pode adicionar lógica para mostrar/esconder a senha
